@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FluxKontextAI - Advanced contextual AI technology for image and data transformation. Explore Flux Kontext and Flux.1 Kontext solutions through videos, demos, and API documentation.">
+    <meta name="keywords" content="Flux Kontext, Flux.1 Kontext, AI transformation, contextual AI, fluxkontextai, flux AI tools, image processing API">
+    <meta name="author" content="FluxKontextAI">
+    <link rel="canonical" href="https://fluxkontextai.xyz" />
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="FluxKontextAI | Next-Gen Contextual AI Solutions">
+    <meta property="og:description" content="Discover FluxKontext and Flux.1 Kontext technologies for advanced contextual understanding and transformation.">
+    <meta property="og:url" content="https://fluxkontextai.xyz">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://fluxkontextai.xyz/images/social-preview.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FluxKontextAI | Next-Gen Contextual AI Solutions">
+    <meta name="twitter:description" content="Discover FluxKontext and Flux.1 Kontext technologies for advanced contextual understanding and transformation.">
+    <meta name="twitter:image" content="https://fluxkontextai.xyz/images/social-preview.jpg">
+    
+    <title>FluxKontextAI | Advanced Contextual AI Technology</title>
+    
+    <style>
+        :root {
+            --primary-color: #0071e3;
+            --primary-light: #2997ff;
+            --primary-dark: #0066cc;
+            --background-light: #f5f5f7;
+            --background-dark: #1d1d1f;
+            --text-primary: #1d1d1f;
+            --text-secondary: #86868b;
+            --text-light: #f5f5f7;
+            --white: #ffffff;
+            --black: #000000;
+            --gray-light: #d2d2d7;
+            --gray-medium: #86868b;
+            --gray-dark: #424245;
+            --success: #34c759;
+            --warning: #ff9500;
+            --error: #ff3b30;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        body {
+            background-color: var(--background-light);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+        
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+        
+        /* Vertical Navigation */
+        .sidebar {
+            width: 240px;
+            background-color: var(--background-dark);
+            color: var(--text-light);
+            padding: 2rem 1rem;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        
+        .sidebar-header {
+            margin-bottom: 2rem;
+        }
+        
+        .sidebar-header h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--white);
+        }
+        
+        .sidebar-header p {
+            font-size: 0.9rem;
+            color: var(--gray-light);
+        }
+        
+        .nav-menu {
+            list-style: none;
+        }
+        
+        .nav-menu li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .nav-menu a {
+            display: block;
+            padding: 0.75rem 1rem;
+            color: var(--gray-light);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-menu a:hover, .nav-menu a.active {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+        }
+        
+        .nav-menu a.active {
+            font-weight: 600;
+        }
+        
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            margin-left: 240px;
+            padding: 2rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            color: var(--white);
+            padding: 3rem 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 1.5rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--white);
+            color: var(--primary-color);
+            padding: 0.75rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Section Styling */
+        .section {
+            margin-bottom: 3rem;
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        
+        .section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        /* Study Videos Section */
+        .video-carousel {
+            display: flex;
+            overflow-x: auto;
+            gap: 1.5rem;
+            padding-bottom: 1rem;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .video-card {
+            flex: 0 0 auto;
+            width: 320px;
+            scroll-snap-align: start;
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .video-thumbnail {
+            position: relative;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            background-color: var(--black);
+        }
+        
+        .video-thumbnail iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .video-info {
+            padding: 1rem;
+        }
+        
+        .video-info h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Website Cards Section */
+        .website-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .website-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .website-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        }
+        
+        .website-thumbnail {
+            height: 160px;
+            background-color: var(--gray-light);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .website-icon {
+            position: absolute;
+            bottom: -20px;
+            left: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background-color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .website-icon img {
+            width: 24px;
+            height: 24px;
+        }
+        
+        .website-details {
+            padding: 1.5rem 1rem 1rem;
+            margin-top: 20px;
+        }
+        
+        .website-details h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .website-link {
+            display: inline-block;
+            margin-top: 0.75rem;
+            color: var(--primary-color);
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .website-link:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+        
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background-color: var(--white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .feature-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .comparison {
+            margin: 2rem 0;
+        }
+        
+        .comparison-images {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .comparison-images img {
+            width: 50%;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .before-after {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: var(--gray-medium);
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: var(--background-dark);
+            color: var(--text-light);
+            padding: 2rem;
+            text-align: center;
+            border-radius: 12px;
+        }
+        
+        .footer p {
+            margin-bottom: 1rem;
+            color: var(--gray-light);
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-links a {
+            color: var(--gray-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--white);
+        }
+        
+        .copyright {
+            font-size: 0.9rem;
+            color: var(--gray-medium);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .sidebar {
+                width: 200px;
+            }
+            
+            .main-content {
+                margin-left: 200px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                width: 100%;
+                position: static;
+                height: auto;
+                padding: 1rem;
+            }
+            
+            .main-content {
+                margin-left: 0;
+                padding: 1.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .section h2 {
+                font-size: 1.5rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero {
+                padding: 2rem 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section {
+                padding: 1.5rem 1rem;
+            }
+            
+            .video-card {
+                width: 280px;
+            }
+            
+            .website-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .comparison-images {
+                flex-direction: column;
+            }
+            
+            .comparison-images img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Vertical Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>FluxKontextAI</h1>
+                <p>Revolutionizing Contextual AI</p>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#study-videos">Study Videos</a></li>
+                    <li><a href="#experience">Experience Websites</a></li>
+                    <li><a href="#api">API Documentation</a></li>
+                    <li><a href="#features">Core Features</a></li>
+                    <li><a href="#about">About FluxKontext</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section id="home" class="hero">
+                <h1>Transform Your Context With FluxKontext</h1>
+                <p>FluxKontext and Flux.1 Kontext are groundbreaking AI technologies that enable dynamic contextual understanding and transformation across multiple domains, from image processing to natural language understanding.</p>
+                <a href="#study-videos" class="cta-button">Explore FluxKontext</a>
+            </section>
+            
+            <!-- Study Videos Section -->
+            <section id="study-videos" class="section">
+                <h2>Study Videos</h2>
+                <p>Learn about FluxKontext technology through these informative videos:</p>
+                
+                <div class="video-carousel">
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/E0qmScftDIU?si=oJb5hsBSSbredKj4" title="Introduction to FluxKontext Technology" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Introduction to FluxKontext Technology</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/8L_nFZGp-ho?si=xyNw8AlA8NvYLQMQ" title="Flux.1 Kontext Advanced Features" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Flux.1 Kontext Advanced Features</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/yiAV5pDe6R8?si=BVSCtyot0mTMXvPb" title="Real-world Applications of FluxKontext" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Real-world Applications of FluxKontext</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Experience Websites Section -->
+            <section id="experience" class="section">
+                <h2>Experience FluxKontext</h2>
+                <p>Try out FluxKontext technology on these platforms:</p>
+                
+                <div class="website-grid">
+                    <div class="website-card">
+                        <div class="website-thumbnail" style="background-image: url('https://via.placeholder.com/600x400/0071e3/ffffff?text=Flux.1+AI');">
+                            <div class="website-icon">
+                                <img src="https://via.placeholder.com/24/0071e3/ffffff?text=F1" alt="Flux.1 AI Icon">
+                            </div>
+                        </div>
+                        <div class="website-details">
+                            <h3>Flux
