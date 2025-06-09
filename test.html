@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FluxKontextAI - Connection Test</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            text-align: center;
+            padding: 2rem;
+        }
+        h1 {
+            color: #0071e3;
+            margin-bottom: 1rem;
+        }
+        .status {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            max-width: 600px;
+            margin: 2rem auto;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .success {
+            color: #34c759;
+            font-weight: bold;
+        }
+        .error {
+            color: #ff3b30;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>FluxKontextAI Connection Test</h1>
+    
+    <div class="status">
+        <h2>Basic Connection Check</h2>
+        <p id="connection-status" class="success">✓ HTML document loaded successfully</p>
+        
+        <h2>Server Information</h2>
+        <p>Server Time: <span id="server-time"></span></p>
+        <p>Protocol: <span id="protocol"></span></p>
+    </div>
+
+    <div class="status">
+        <h2>Next Steps</h2>
+        <ol style="text-align: left; max-width: 400px; margin: 0 auto;">
+            <li>Check CloudFlare SSL/TLS mode (recommend "Full")</li>
+            <li>Disable CloudFlare proxy (grey cloud icon) temporarily</li>
+            <li>Verify origin server responds to direct IP access</li>
+        </ol>
+    </div>
+
+    <script>
+        // Display server-side information
+        document.getElementById('server-time').textContent = new Date().toString();
+        document.getElementById('protocol').textContent = window.location.protocol;
+        
+        // Basic error detection
+        window.addEventListener('error', function(e) {
+            document.getElementById('connection-status').className = 'error';
+            document.getElementById('connection-status').innerHTML = 
+                `✗ JavaScript Error: ${e.message}`;
+        });
+    </script>
+</body>
+</html>
