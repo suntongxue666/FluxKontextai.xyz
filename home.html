@@ -3,225 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore FluxKontext and Flux.1 Kontext - revolutionary AI technologies for contextual understanding and transformation. Learn through videos, experience demos, and access API documentation.">
-    <meta name="keywords" content="Flux Kontext, Flux.1 Kontext, AI technology, contextual AI, fluxkontextai, flux context AI, flux AI tools">
+    <title>FluxKontext - Revolutionary Contextual AI Technology</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Discover FluxKontext and Flux.1 Kontext - Revolutionary AI technology for contextual understanding and transformation. Learn, experience, and integrate with leading platforms.">
+    <meta name="keywords" content="FluxKontext, Flux.1 Kontext, AI, Contextual AI, Machine Learning, Image Generation, API">
     <meta name="author" content="FluxKontextAI">
     <link rel="canonical" href="https://fluxkontextai.xyz" />
-    <link 
-        rel="icon" 
-        type="image/png"
-        href="https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/webstie-icon//FlunKontextai%20icon.png"
-    />
-    <link 
-        rel="apple-touch-icon" 
-        href="https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/webstie-icon//FlunKontextai%20icon.png"
-    />
-
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/webstie-icon//FlunKontextai%20icon.png">
+    <link rel="apple-touch-icon" href="https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/webstie-icon//FlunKontextai%20icon.png">
+    
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1R0WVKMJDH"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
-
-     gtag('config', 'G-1R0WVKMJDH');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
     </script>
-    
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="FluxKontextAI | Next-Gen Contextual AI Technology">
-    <meta property="og:description" content="Discover FluxKontext and Flux.1 Kontext - revolutionary AI technologies for advanced contextual understanding.">
-    <meta property="og:url" content="https://fluxkontextai.xyz">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://fluxkontextai.xyz/images/fluxkontext-social-preview.jpg">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="FluxKontextAI | Next-Gen Contextual AI Technology">
-    <meta name="twitter:description" content="Discover FluxKontext and Flux.1 Kontext - revolutionary AI technologies for advanced contextual understanding.">
-    <meta name="twitter:image" content="https://fluxkontextai.xyz/images/fluxkontext-social-preview.jpg">
-    
-    <title>FluxKontextAI | Next-Gen Contextual AI Technology</title>
     
     <style>
         :root {
-            --primary-color: #0071e3;
-            --primary-light: #2997ff;
-            --primary-dark: #0066cc;
-            --background-light: #f5f5f7;
-            --background-dark: #1d1d1f;
-            --text-primary: #1d1d1f;
-            --text-secondary: #86868b;
-            --text-light: #f5f5f7;
-            --white: #ffffff;
-            --black: #000000;
-            --gray-light: #d2d2d7;
-            --gray-medium: #86868b;
-            --gray-dark: #424245;
-            --success: #34c759;
-            --warning: #ff9500;
-            --error: #ff3b30;
+            --primary: #007AFF;
+            --secondary: #5856D6;
+            --success: #34C759;
+            --warning: #FF9500;
+            --danger: #FF3B30;
+            --gray-light: #F2F2F7;
+            --gray: #8E8E93;
+            --text-primary: #1D1D1F;
+            --text-secondary: #86868B;
+            --white: #FFFFFF;
         }
         
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
         
         body {
-            background-color: var(--background-light);
-            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
-            padding-top: 4rem; /* Added for fixed header */
+            color: var(--text-primary);
+            padding-top: 4rem;
         }
         
-        .container {
-            display: flex;
-            min-height: 100vh;
-        }
-        
-        /* Vertical Navigation */
-        .sidebar {
-            width: 240px;
-            background-color: var(--background-dark);
-            color: var(--text-light);
-            padding: 2rem 1rem;
+        /* Navigation Styles */
+        .navbar {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             position: fixed;
-            height: 100vh;
-            overflow-y: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            height: 4rem;
         }
         
-        .sidebar-header {
-            margin-bottom: 2rem;
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
         }
         
-        .sidebar-header h1 {
+        .nav-logo {
             font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-            color: var(--white);
-        }
-        
-        .sidebar-header p {
-            font-size: 0.9rem;
-            color: var(--gray-light);
+            font-weight: bold;
+            color: var(--primary);
         }
         
         .nav-menu {
+            display: flex;
             list-style: none;
+            gap: 2rem;
         }
         
-        .nav-menu li {
-            margin-bottom: 0.5rem;
-        }
-        
-        .nav-menu a {
-            display: block;
-            padding: 0.75rem 1rem;
-            color: var(--gray-light);
+        .nav-link {
             text-decoration: none;
-            border-radius: 8px;
-            transition: all 0.3s ease;
+            color: var(--text-primary);
+            font-weight: 500;
+            transition: color 0.3s ease;
         }
         
-        .nav-menu a:hover, .nav-menu a.active {
-            background-color: rgba(255, 255, 255, 0.1);
-            color: var(--white);
+        .nav-link:hover {
+            color: var(--primary);
         }
         
-        .nav-menu a.active {
-            font-weight: 600;
+        .nav-link.active {
+            color: var(--primary);
         }
         
-        /* Main Content */
-        .main-content {
-            flex: 1;
-            margin-left: 240px;
-            padding: 2rem;
+        /* Container and Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
         }
         
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
-            color: var(--white);
-            padding: 3rem 2rem;
-            border-radius: 12px;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .hero p {
-            font-size: 1.1rem;
-            max-width: 800px;
-            margin: 0 auto 1.5rem;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background-color: var(--white);
-            color: var(--primary-color);
-            padding: 0.75rem 1.5rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-        
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-        
-        /* Section Styling */
+        /* Section Styles */
         .section {
-            margin-bottom: 3rem;
-            background-color: var(--white);
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            margin-bottom: 4rem;
+            padding: 2rem 0;
         }
         
         .section h2 {
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            color: var(--primary-color);
-            position: relative;
-            padding-bottom: 0.5rem;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            text-align: center;
         }
         
-        .section h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 60px;
-            height: 3px;
-            background-color: var(--primary-color);
+        .section p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
-        /* Study Videos Section */
-        .video-carousel {
-            display: flex;
-            overflow-x: auto;
-            gap: 1.5rem;
-            padding-bottom: 1rem;
-            scroll-snap-type: x mandatory;
-            -webkit-overflow-scrolling: touch;
+        /* Video Grid */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
         }
         
         .video-card {
-            flex: 0 0 auto;
-            width: 320px;
-            scroll-snap-align: start;
-            background-color: var(--white);
-            border-radius: 8px;
+            background: var(--white);
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
         }
         
@@ -230,52 +151,50 @@
         }
         
         .video-thumbnail {
-            position: relative;
-            padding-top: 56.25%; /* 16:9 Aspect Ratio */
-            background-color: var(--black);
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
         }
         
         .video-thumbnail iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
             border: none;
         }
         
         .video-info {
-            padding: 1rem;
+            padding: 1.5rem;
         }
         
         .video-info h3 {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             margin-bottom: 0.5rem;
+            color: var(--text-primary);
         }
         
-        /* Website Cards Section */
+        /* Website Grid */
         .website-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
         }
         
         .website-card {
-            background-color: var(--white);
-            border-radius: 8px;
+            background: var(--white);
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
         }
         
         .website-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
         }
         
         .website-thumbnail {
-            height: 160px;
-            background-color: var(--gray-light);
+            width: 100%;
+            height: 200px;
             background-size: cover;
             background-position: center;
             position: relative;
@@ -283,22 +202,6 @@
             overflow: hidden;
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
-        }
-        
-        .website-thumbnail::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: var(--gray-light);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        
-        .website-thumbnail.loading::before {
-            opacity: 1;
         }
         
         .website-icon {
@@ -330,277 +233,436 @@
         }
         
         .website-details {
-            padding: 1.5rem 1rem 1rem;
-            margin-top: 20px;
+            padding: 1.5rem;
         }
         
         .website-details h3 {
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            color: var(--text-primary);
+        }
+        
+        .website-details p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
         }
         
         .website-link {
             display: inline-block;
-            margin-top: 0.75rem;
-            color: var(--primary-color);
-            font-weight: 500;
+            padding: 0.8rem 1.5rem;
+            background: var(--primary);
+            color: var(--white);
             text-decoration: none;
-            transition: color 0.3s ease;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background 0.3s ease;
         }
         
         .website-link:hover {
-            color: var(--primary-dark);
-            text-decoration: underline;
+            background: var(--secondary);
         }
         
         /* Features Section */
-        .features {
+        .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
+            margin-top: 2rem;
         }
         
         .feature-card {
-            background-color: var(--white);
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         }
         
         .feature-card h3 {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin-bottom: 1rem;
-            color: var(--primary-color);
+            color: var(--text-primary);
         }
         
-        .comparison {
-            margin: 2rem 0;
+        .feature-card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
         }
         
-        .comparison-images {
-            display: flex;
-            gap: 1rem;
-            margin: 1rem 0;
+        /* About Section */
+        .about-content {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            text-align: center;
         }
         
-        .comparison-images img {
-            width: 50%;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        .about-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
         }
         
-        .before-after {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.9rem;
-            color: var(--gray-medium);
+        .about-content p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1rem;
         }
         
         /* Footer */
         .footer {
-            background-color: var(--background-dark);
-            color: var(--text-light);
-            padding: 2rem;
+            background: var(--gray-light);
+            padding: 2rem 0;
             text-align: center;
-            border-radius: 12px;
-        }
-        
-        .footer p {
-            margin-bottom: 1rem;
-            color: var(--gray-light);
+            margin-top: 4rem;
         }
         
         .footer-links {
             display: flex;
             justify-content: center;
-            gap: 1.5rem;
-            margin-bottom: 1.5rem;
+            gap: 2rem;
+            margin-bottom: 1rem;
         }
         
         .footer-links a {
-            color: var(--gray-light);
+            color: var(--text-secondary);
             text-decoration: none;
             transition: color 0.3s ease;
         }
         
         .footer-links a:hover {
-            color: var(--white);
+            color: var(--primary);
         }
         
-        .copyright {
+        .footer-text {
+            color: var(--text-secondary);
             font-size: 0.9rem;
-            color: var(--gray-medium);
         }
         
         /* Responsive Design */
-        @media (max-width: 1024px) {
-            .sidebar {
-                width: 200px;
-            }
-            
-            .main-content {
-                margin-left: 200px;
-            }
-        }
-        
         @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-            
-            .sidebar {
-                width: 100%;
-                position: static;
-                height: auto;
-                padding: 1rem;
-            }
-            
-            .main-content {
-                margin-left: 0;
-                padding: 1.5rem;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
+            .nav-menu {
+                display: none;
             }
             
             .section h2 {
-                font-size: 1.5rem;
+                font-size: 2rem;
             }
             
-            .features {
+            .container {
+                padding: 1rem;
+            }
+            
+            .website-grid,
+            .video-grid,
+            .features-grid {
                 grid-template-columns: 1fr;
             }
         }
-        
-        @media (max-width: 480px) {
-            .hero {
-                padding: 2rem 1rem;
+
+        /* Hero Section Styles */
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+            margin: 0 -16px 0 0; /* 修改为 0px -16px 0px 0px */
+            border-radius: 0 0 20px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            opacity: 0.9;
+            z-index: -1;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            line-height: 1.2;
+            color: white; /* 确保标题是白色 */
+        }
+
+        .hero-section p {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            opacity: 1; /* 改为完全不透明，确保文字是纯白色 */
+            color: white; /* 明确设置为白色 */
+            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+            margin-bottom: 0;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.2rem;
             }
             
-            .hero h1 {
+            .hero-section p {
+                font-size: 1.1rem;
+            }
+            
+            .hero-section {
+                padding: 3rem 1rem;
+                margin: 0 -16px 0 0; /* 保持一致的margin */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-section h1 {
                 font-size: 1.8rem;
             }
             
-            .section {
-                padding: 1.5rem 1rem;
-            }
-            
-            .video-card {
-                width: 280px;
-            }
-            
-            .website-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .comparison-images {
-                flex-direction: column;
-            }
-            
-            .comparison-images img {
-                width: 100%;
+            .hero-section p {
+                font-size: 1rem;
             }
         }
+
+        /* Study Videos Section */
+        #study-videos {
+            margin: 0px 0px 0px; /* 修改为 0px 0px 0px */
+        }
     </style>
-    <link rel="preload" as="image" href="https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/webstie-icon//FlunKontextai%20icon.png">
-    <link rel="preload" as="image" href="https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/webstie-icon//Replicate%20icon.png">
-    <link rel="preload" as="image" href="https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/webstie-icon//DataCrunchi.io%20icon.png">
-    <script>
-        // 添加图标加载错误处理
-        document.querySelector('link[rel="icon"]').onerror = function() {
-            // 如果加载失败，尝试使用备用图标
-            this.href = '/favicon.ico';
-        };
-    </script>
 </head>
 <body>
-    <!-- 将垂直导航改为顶部横向导航 -->
-    <nav class="bg-white shadow-lg fixed top-0 left-0 right-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <!-- Logo 区域 -->
-                <div class="flex-shrink-0">
-                    <h1 class="text-2xl font-bold text-gray-900">FluxKontext</h1>
-                </div>
-                
-                <!-- 导航链接 -->
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#home" class="nav-link">Home</a>
-                        <a href="#study-videos" class="nav-link">Study Video</a>
-                        <a href="#experience" class="nav-link">Experience</a>
-                        <a href="#flux-api" class="nav-link">Flux.1 API</a>
-                        <a href="#features" class="nav-link">Features</a>
-                        <a href="#about" class="nav-link">About</a>
-                    </div>
-                </div>
-                
-                <!-- 移动端菜单按钮 -->
-                <div class="md:hidden">
-                    <button type="button" class="mobile-menu-button bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-        
-        <!-- 移动端菜单 -->
-        <div class="mobile-menu hidden md:hidden">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-                <a href="#home" class="mobile-nav-link">Home</a>
-                <a href="#study-videos" class="mobile-nav-link">Study Video</a>
-                <a href="#experience" class="mobile-nav-link">Experience</a>
-                <a href="#flux-api" class="mobile-nav-link">Flux.1 API</a>
-                <a href="#features" class="mobile-nav-link">Features</a>
-                <a href="#about" class="mobile-nav-link">About</a>
-            </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">FluxKontext</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#study-videos" class="nav-link">Study Video</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#flux-api" class="nav-link">Flux.1 API</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
         </div>
     </nav>
 
-    <!-- 添加顶部导航的样式 -->
-    <style>
-        .nav-link {
-            @apply text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200;
-        }
-        
-        .nav-link.active {
-            @apply text-blue-600 bg-blue-50;
-        }
-        
-        .mobile-nav-link {
-            @apply text-gray-600 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200;
-        }
-        
-        .mobile-menu-button {
-            @apply transition-colors duration-200;
-        }
-        
-        /* 确保内容不被固定导航栏遮挡 */
-        body {
-            padding-top: 4rem;
-        }
-        
-        /* 响应式调整 */
-        @media (max-width: 768px) {
-            .nav-link {
-                @apply text-sm;
-            }
-        }
-    </style>
+    <div class="container">
+        <!-- Hero Section -->
+        <section id="home" class="section hero-section">
+            <div class="hero-content">
+                <h1>FluxKontext: Revolutionary Contextual AI</h1>
+                <p>Transform your understanding of AI with FluxKontext and Flux.1 Kontext technology. Experience the future of contextual intelligence.</p>
+            </div>
+        </section>
 
-    <!-- 添加导航交互脚本 -->
+        <!-- Study Videos Section -->
+        <section id="study-videos" class="section">
+            <h2>Study Videos</h2>
+            <p>Learn FluxKontext through comprehensive video tutorials and demonstrations</p>
+            
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" title="FluxKontext Tutorial 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Getting Started with FluxKontext</h3>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/spa6oibkAck" title="FluxKontext Tutorial 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Advanced FluxKontext Techniques</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Websites Section -->
+        <section id="experience" class="section">
+            <h2>Experience FluxKontext</h2>
+            <p>Try out FluxKontext and Flux.1 Kontext technology on these leading platforms</p>
+            
+            <div class="website-grid">
+                <div class="website-card">
+                    <div class="website-thumbnail" style="background-image: url('https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/images-experience/Flux.1.jpeg');">
+                        <div class="website-icon">
+                            <img src="https://flux1.ai/favicon.ico" alt="Flux.1 AI Icon">
+                        </div>
+                    </div>
+                    <div class="website-details">
+                        <h3>Flux.1 AI</h3>
+                        <p>Experience FluxKontext for advanced image generation and contextual AI transformation.</p>
+                        <a href="https://flux1.ai/flux-kontext" class="website-link" target="_blank" rel="noopener">Visit Flux.1 AI →</a>
+                    </div>
+                </div>
+                
+                <div class="website-card">
+                    <div class="website-thumbnail" style="background-image: url('https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/images-experience/Replicate.png');">
+                        <div class="website-icon">
+                            <img src="https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/webstie-icon//Replicate%20icon.png" alt="Replicate Icon">
+                        </div>
+                    </div>
+                    <div class="website-details">
+                        <h3>Replicate</h3>
+                        <p>Run FluxKontext Pro models in the cloud with easy API access.</p>
+                        <a href="https://replicate.com/black-forest-labs/flux-kontext-pro" class="website-link" target="_blank" rel="noopener">Visit Replicate →</a>
+                    </div>
+                </div>
+                
+                <div class="website-card">
+                    <div class="website-thumbnail" style="background-image: url('https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/images-experience/FluxProAI.jpeg');">
+                        <div class="website-icon">
+                            <img src="https://www.fluxpro.ai/favicon.ico" alt="Flux Pro AI Icon">
+                        </div>
+                    </div>
+                    <div class="website-details">
+                        <h3>Flux Pro AI</h3>
+                        <p>Professional tools powered by FluxKontext technology.</p>
+                        <a href="https://www.fluxpro.ai/im-tools/flux-kontext" class="website-link" target="_blank" rel="noopener">Visit Flux Pro AI →</a>
+                    </div>
+                </div>
+                
+                <div class="website-card">
+                    <div class="website-thumbnail" style="background-image: url('https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/images-experience/Fal.ai.png');">
+                        <div class="website-icon">
+                            <img src="https://fal.ai/favicon.ico" alt="Fal.ai Icon">
+                        </div>
+                    </div>
+                    <div class="website-details">
+                        <h3>Fal.ai</h3>
+                        <p>Access high-performance Flux Pro Kontext models for developers.</p>
+                        <a href="https://fal.ai/models/fal-ai/flux-pro/kontext" class="website-link" target="_blank" rel="noopener">Visit Fal.ai →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flux.1 API Websites Section -->
+        <section id="flux-api" class="section">
+            <h2>Flux.1 API Websites</h2>
+            <p>Integrate FluxKontext technology into your applications with these API resources</p>
+            
+            <div class="website-grid">
+                <div class="website-card">
+                    <div class="website-thumbnail" style="background-image: url('https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/images-flux.1api//Black%20Forest%20Labs.png');">
+                        <div class="website-icon">
+                            <img src="https://bfl.ai/favicon.ico" alt="Black Forest Labs Icon">
+                        </div>
+                    </div>
+                    <div class="website-details">
+                        <h3>Black Forest Labs</h3>
+                        <p>Official Flux.1 API provider and development platform.</p>
+                        <a href="https://bfl.ai/models/flux-kontext" class="website-link" target="_blank" rel="noopener">Visit API →</a>
+                    </div>
+                </div>
+                
+                <div class="website-card">
+                    <div class="website-thumbnail" style="background-image: url('https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/images-flux.1api/DataCrunch.io.png');">
+                        <div class="website-icon">
+                            <img src="https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/webstie-icon//DataCrunchi.io%20icon.png" alt="DataCrunch.io Icon">
+                        </div>
+                    </div>
+                    <div class="website-details">
+                        <h3>DataCrunch.io</h3>
+                        <p>Comprehensive API documentation for FluxKontext services.</p>
+                        <a href="https://api.datacrunch.io/v1/docs#description/datacrunchio" class="website-link" target="_blank" rel="noopener">Visit API →</a>
+                    </div>
+                </div>
+                
+                <div class="website-card">
+                    <div class="website-thumbnail" style="background-image: url('https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/images-flux.1api/Replicate%20API.png');">
+                        <div class="website-icon">
+                            <img src="https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/webstie-icon//Replicate%20icon.png" alt="Replicate Icon">
+                        </div>
+                    </div>
+                    <div class="website-details">
+                        <h3>Replicate API</h3>
+                        <p>API for running FluxKontext face transformation models.</p>
+                        <a href="https://replicate.com/flux-kontext-apps/face-to-many-kontext/api" class="website-link" target="_blank" rel="noopener">Visit API →</a>
+                    </div>
+                </div>
+                
+                <div class="website-card">
+                    <div class="website-thumbnail" style="background-image: url('https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/images-flux.1api/Kie.ai.png');">
+                        <div class="website-icon">
+                            <img src="https://kie.ai/favicon.ico" alt="Kie.ai Icon">
+                        </div>
+                    </div>
+                    <div class="website-details">
+                        <h3>Kie.ai Docs</h3>
+                        <p>Detailed documentation for FluxKontext API endpoints.</p>
+                        <a href="https://docs.kie.ai/flux-kontext-api/" class="website-link" target="_blank" rel="noopener">Visit Docs →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="section">
+            <h2>Core Features</h2>
+            <p>Discover what makes FluxKontext revolutionary</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Contextual Understanding</h3>
+                    <p>Advanced AI that understands context and relationships in data</p>
+                </div>
+                <div class="feature-card">
+                    <h3>High Performance</h3>
+                    <p>Optimized for speed and efficiency in real-world applications</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Easy Integration</h3>
+                    <p>Simple API integration for developers and businesses</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>About FluxKontext</h2>
+            <div class="about-content">
+                <h3>Revolutionizing AI Technology</h3>
+                <p>FluxKontext represents a breakthrough in contextual AI understanding, enabling machines to comprehend and process information with human-like contextual awareness.</p>
+                <p>Our technology powers the next generation of AI applications, from image generation to complex data analysis.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#study-videos">Videos</a>
+            <a href="#experience">Demos</a>
+            <a href="#flux-api">API</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+        </div>
+        <div class="footer-text">
+            © 2024 FluxKontextAI. All rights reserved.
+        </div>
+    </footer>
+
     <script>
-        // 移动端菜单切换
-        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
-            const mobileMenu = document.querySelector('.mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        });
-        
-        // 平滑滚动到对应区域
+        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -614,7 +676,7 @@
             });
         });
         
-        // 导航高亮
+        // Navigation active state
         window.addEventListener('scroll', function() {
             const sections = document.querySelectorAll('section[id]');
             const navLinks = document.querySelectorAll('.nav-link');
@@ -635,264 +697,5 @@
             });
         });
     </script>
-
-    <div class="container">
-        <!-- Main Content -->
-        <main class="main-content">
-            <!-- Hero Section -->
-            <section id="home" class="hero">
-                <h1>Transform Your Context With FluxKontext</h1>
-                <p>FluxKontext and Flux.1 Kontext are groundbreaking AI technologies that enable dynamic contextual understanding and transformation across multiple domains, from image processing to natural language understanding.</p>
-                <a href="#study-videos" class="cta-button">Explore FluxKontext</a>
-            </section>
-            
-            <!-- Study Videos Section -->
-            <section id="study-videos" class="section">
-                <h2>Study Videos</h2>
-                <p>Learn about FluxKontext technology through these informative videos:</p>
-                
-                <div class="video-carousel">
-                    <div class="video-card">
-                        <div class="video-thumbnail">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/E0qmScftDIU?si=oJb5hsBSSbredKj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3>Introduction to FluxKontext Technology</h3>
-                        </div>
-                    </div>
-                    
-                    <div class="video-card">
-                        <div class="video-thumbnail">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/8L_nFZGp-ho?si=xyNw8AlA8NvYLQMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3>Flux.1 Kontext Advanced Features</h3>
-                        </div>
-                    </div>
-                    
-                    <div class="video-card">
-                        <div class="video-thumbnail">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/yiAV5pDe6R8?si=BVSCtyot0mTMXvPb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3>Real-world Applications of FluxKontext</h3>
-                        </div>
-                    </div>
-                    
-                    <div class="video-card">
-                        <div class="video-thumbnail">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/spa6oibkAck?si=k9LwdHo1BIGE0XN3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <div class="video-info">
-                            <h3>New FluxKontext Tutorial</h3>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- Experience Websites Section -->
-            <section id="experience" class="section">
-                <h2>Experience FluxKontext</h2>
-                <p>Try out FluxKontext and Flux.1 Kontext technology on these leading platforms:</p>
-                <div class="website-grid">
-                    <div class="website-card">
-                        <div class="website-thumbnail" style="background-image: url('https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/images-experience/Flux.1.jpeg');">
-                            <div class="website-icon">
-                                <img src="https://flux1.ai/favicon.ico" alt="Flux.1 AI Website Icon">
-                            </div>
-                        </div>
-                        <div class="website-details">
-                            <h3>Flux.1 AI</h3>
-                            <p>Experience FluxKontext for advanced image generation and contextual AI transformation. Unlock the next level of creative possibilities.</p>
-                            <a href="https://flux1.ai/flux-kontext" class="website-link" target="_blank" rel="noopener">Visit Flux.1 AI →</a>
-                        </div>
-                    </div>
-                    <div class="website-card">
-                        <div class="website-thumbnail" style="background-image: url('https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/images-experience/Replicate.png');">
-                            <div class="website-icon">
-                                <img src="https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/webstie-icon//Replicate%20icon.png" alt="Replicate Platform Icon">
-                            </div>
-                        </div>
-                        <div class="website-details">
-                            <h3>Replicate</h3>
-                            <p>Run FluxKontext Pro models in the cloud with easy API access. Perfect for developers and researchers seeking scalable contextual AI.</p>
-                            <a href="https://replicate.com/black-forest-labs/flux-kontext-pro" class="website-link" target="_blank" rel="noopener">Visit Replicate →</a>
-                        </div>
-                    </div>
-                    <div class="website-card">
-                        <div class="website-thumbnail" style="background-image: url('https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/images-experience/FluxProAI.jpeg');">
-                            <div class="website-icon">
-                                <img src="https://www.fluxpro.ai/favicon.ico" alt="Flux Pro AI Icon">
-                            </div>
-                        </div>
-                        <div class="website-details">
-                            <h3>Flux Pro AI</h3>
-                            <p>Professional tools powered by FluxKontext technology. Achieve high-precision contextual image and data transformation for business.</p>
-                            <a href="https://www.fluxpro.ai/im-tools/flux-kontext" class="website-link" target="_blank" rel="noopener">Visit Flux Pro AI →</a>
-                        </div>
-                    </div>
-                    <div class="website-card">
-                        <div class="website-thumbnail" style="background-image: url('https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/images-experience/Fal.ai.png');">
-                            <div class="website-icon">
-                                <img src="https://fal.ai/favicon.ico" alt="Fal.ai Platform Icon">
-                            </div>
-                        </div>
-                        <div class="website-details">
-                            <h3>Fal.ai</h3>
-                            <p>Access high-performance Flux Pro Kontext models for developers. Fast, reliable, and ready for integration into your AI workflow.</p>
-                            <a href="https://fal.ai/models/fal-ai/flux-pro/kontext" class="website-link" target="_blank" rel="noopener">Visit Fal.ai →</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- API Websites Section -->
-            <section id="flux-api" class="section">
-                <h2>Flux.1 API Websites</h2>
-                <p>Integrate FluxKontext technology into your applications with these API resources:</p>
-                
-                <div class="website-grid">
-                    <div class="website-card">
-                        <div class="website-thumbnail" style="background-image: url('https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/images-flux.1api//Black%20Forest%20Labs.png');">
-                            <div class="website-icon">
-                                <img src="https://bfl.ai/favicon.ico" alt="Black Forest Labs Icon">
-                            </div>
-                        </div>
-                        <div class="website-details">
-                            <h3>Black Forest Labs</h3>
-                            <p>Official Flux.1 API provider and development platform.</p>
-                            <a href="https://bfl.ai/models/flux-kontext" class="website-link" target="_blank" rel="noopener">Visit API →</a>
-                        </div>
-                    </div>
-
-                    <div class="website-card">
-                        <div class="website-thumbnail" style="background-image: url('https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/images-flux.1api/DataCrunch.io.png');">
-                            <div class="website-icon">
-                                <img src="https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/webstie-icon//DataCrunchi.io%20icon.png" alt="DataCrunch.io Icon">
-                            </div>
-                        </div>
-                        <div class="website-details">
-                            <h3>DataCrunch.io</h3>
-                            <p>Comprehensive API documentation for FluxKontext services.</p>
-                            <a href="https://api.datacrunch.io/v1/docs#description/datacrunchio" class="website-link" target="_blank" rel="noopener">Visit API →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="website-card">
-                        <div class="website-thumbnail" style="background-image: url('https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/images-flux.1api/Replicate%20API.png');">
-                            <div class="website-icon">
-                                <img src="https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/webstie-icon//Replicate%20icon.png" alt="Replicate Icon">
-                            </div>
-                        </div>
-                        <div class="website-details">
-                            <h3>Replicate API</h3>
-                            <p>API for running FluxKontext face transformation models.</p>
-                            <a href="https://replicate.com/flux-kontext-apps/face-to-many-kontext/api" class="website-link" target="_blank" rel="noopener">Visit API →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="website-card">
-                        <div class="website-thumbnail" style="background-image: url('https://ciwjjfcuhubjydajazkk.supabase.co/storage/v1/object/public/images-flux.1api/Kie.ai.png');">
-                            <div class="website-icon">
-                                <img src="https://kie.ai/favicon.ico" alt="Kie.ai Icon">
-                            </div>
-                        </div>
-                        <div class="website-details">
-                            <h3>Kie.ai Docs</h3>
-                            <p>Detailed documentation for FluxKontext API endpoints.</p>
-                            <a href="https://docs.kie.ai/flux-kontext-api/" class="website-link" target="_blank" rel="noopener">Visit Docs →</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- Core Features Section -->
-            <section id="features" class="section">
-                <h2>Core Features of FluxKontext</h2>
-                <p>Discover what makes FluxKontext technology revolutionary:</p>
-                
-                <div class="features">
-                    <div class="feature-card">
-                        <h3>Contextual Understanding</h3>
-                        <p>FluxKontext goes beyond simple pattern recognition to truly understand the context of your inputs, whether they're images, text, or multimodal data.</p>
-                        
-                        <div class="comparison">
-                            <div class="comparison-images">
-                                <img src="https://via.placeholder.com/400x300?text=Without+FluxKontext" alt="Without FluxKontext">
-                                <img src="https://via.placeholder.com/400x300?text=With+FluxKontext" alt="With FluxKontext">
-                            </div>
-                            <div class="before-after">
-                                <span>Standard AI</span>
-                                <span>FluxKontext AI</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <h3>Dynamic Transformation</h3>
-                        <p>Flux.1 Kontext enables real-time transformation of content while preserving essential contextual relationships that other AI systems often break.</p>
-                        
-                        <div class="comparison">
-                            <div class="comparison-images">
-                                <img src="https://via.placeholder.com/400x300?text=Input+Image" alt="Input Image">
-                                <img src="https://via.placeholder.com/400x300?text=Transformed+Output" alt="Transformed Output">
-                            </div>
-                            <div class="before-after">
-                                <span>Before</span>
-                                <span>After</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <h3>Multi-Domain Application</h3>
-                        <p>From computer vision to natural language processing, FluxKontext technology adapts to diverse domains with consistent contextual excellence.</p>
-                        
-                        <div class="comparison">
-                            <div class="comparison-images">
-                                <img src="https://via.placeholder.com/400x300?text=Single+Domain+AI" alt="Single Domain AI">
-                                <img src="https://via.placeholder.com/400x300?text=Multi-Domain+FluxKontext" alt="Multi-Domain FluxKontext">
-                            </div>
-                            <div class="before-after">
-                                <span>Traditional AI</span>
-                                <span>FluxKontext</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- About Section -->
-            <section id="about" class="section">
-                <h2>About FluxKontext Technology</h2>
-                <p>FluxKontext represents a paradigm shift in artificial intelligence by introducing dynamic contextual awareness that adapts in real-time to changing inputs and environments. Unlike traditional AI systems that process information in static, predetermined ways, FluxKontext maintains a fluid understanding of relationships and meanings.</p>
-                
-                <p>The Flux.1 Kontext variant builds upon this foundation with enhanced capabilities for professional and industrial applications, offering greater precision, faster processing, and more sophisticated contextual modeling.</p>
-                
-                <h3 style="margin-top: 1.5rem;">Key Advantages:</h3>
-                <ul style="margin-top: 1rem; padding-left: 1.5rem;">
-                    <li style="margin-bottom: 0.5rem;">Adaptive contextual understanding that evolves with new data</li>
-                    <li style="margin-bottom: 0.5rem;">Preservation of semantic relationships during transformations</li>
-                    <li style="margin-bottom: 0.5rem;">Cross-domain applicability with consistent performance</li>
-                    <li style="margin-bottom: 0.5rem;">Real-time processing capabilities for dynamic applications</li>
-                    <li>Developer-friendly API access for easy integration</li>
-                </ul>
-            </section>
-            
-            <!-- Footer -->
-            <footer class="footer">
-                <p>FluxKontextAI - Pioneering the Future of Contextual Artificial Intelligence</p>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#study-videos">Videos</a>
-                    <a href="#experience">Demos</a>
-                    <a href="#flux-api">API</a>
-                    <a href="#features">Features</a>
-                    <a href="#about">About</a>
-                </div>
-                <p class="copyright">© 2023 FluxKontextAI.xyz - All rights reserved.</p>
-            </footer>
-        </main>
-    </div>
 </body>
 </html>
